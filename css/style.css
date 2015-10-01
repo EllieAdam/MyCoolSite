@@ -1,0 +1,576 @@
+html, body {
+  background: #FFF;
+  color: #555;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: auto;
+  padding: 0;
+}
+* {
+  border: 0;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+      -ms-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+       -ms-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+ul, li {list-style: none;}
+li {padding: 2px 5px;}
+a {
+  color: #555;
+  text-decoration: none;
+}
+a:hover {
+  opacity: .5;
+}
+img, video, audio, section, article, footer, header {display: block;}
+img {width: 100%}
+h1, h2, h3, h4, h5, h6 {
+  color: #555;
+  padding: 5px 10px 10px;
+}
+
+/* ----------------------------------- */
+
+#logo{
+ 
+}
+/* ----------------------------------- */
+
+/* ----------------------------------- */
+
+#about{
+  padding: 50px;
+  margin: 50px 50px;
+}
+
+#work{
+  padding: 50px;
+  margin: 50px 50px;
+}
+
+#contact{
+  padding: 50px;
+  margin: 50px 50px;
+}
+
+#work{
+  padding: 50px;
+  margin: 50px 20px;
+}
+
+#latestwork{
+
+  padding: 50px;
+  margin: 50px 50px;
+}
+/* ----------------------------------- */
+
+p {
+  color: #333;
+  padding: 5px 10px;
+  text-align: justify;
+}
+.fa {color: white;}
+menu {
+  background: transparent;
+  box-shadow: 1px 0 1px rgba(0,0,0,.35);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+menu ul {
+  background: #FF5B06;
+  display: none;
+  opacity: 0;
+  padding: 15px 10px;
+  padding-left: 80px;
+}
+menu li {
+  border-right: 1px solid rgba(0,0,0,.25);
+  display: inline-block;
+  font-weight: bold;
+  line-height: 20px;
+  text-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+menu li:last-child {border: 0}
+menu li a {color: #FFF;}
+#menu {
+  cursor: pointer;
+  font-size: 26px;
+  height: 30px;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  text-shadow: 0 1px 2px rgba(0,0,0,.25);
+  width: 40px;
+  z-index: 9999;
+}
+header {
+  background-attachment: fixed;
+  background-image: url('../img/sun02.png'); /* header image */
+  background-position: center;
+  background-size: cover;
+  color: #FFF;
+  height: auto;
+  margin: 0 auto 0;
+  overflow: hidden;
+  padding: 20px 20px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .5s ease-in-out;
+      -ms-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
+  z-index: 1;
+}
+header ul.social {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  position: fixed;
+  top: auto;
+  left: 0;
+  right: 0;
+  height: auto;
+  list-style: none;
+  margin: 0px auto 20px;
+  max-width: 160px;
+  width: initial;
+}
+header ul.social li {
+  background: rgba(0, 0, 0, 0.2);
+  border: 0;
+  border-radius: 100%;
+  font-size: 100%;
+  height: 35px;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 9px 10px;
+  position: relative;
+  width: 35px;
+}
+header ul.social .fa {text-shadow: 0 1px 2px rgba(0,0,0,.25);}
+header div {
+  margin: 0 auto;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  right: 0;
+}
+footer {
+  background: transparent;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+footer h2 {
+  margin: 60px 10px 20px;
+}
+footer p {
+  color: #656565;
+  margin: 10px auto 50px;
+  text-align: center;
+  max-width: 500px;
+}
+footer .footer, .footer-02 {
+  height: 100%;
+  padding: 40px 10px 20px;
+}
+footer .footer {background: #111;}
+footer .footer-02 {background: #000;}
+footer .container {
+  background: #050505;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+header img {
+  margin: 0 auto;
+  width: 350px;
+}
+section, article {
+  background: inherit;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: initial;
+}
+section article {  
+  opacity: 0;
+  -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+          transition: transform 1s ease, opacity 1s ease;
+  -webkit-transform: translateY(-40px);
+     -moz-transform: translateY(-40px);
+      -ms-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+section article.fadeIn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+section {z-index: 2;}
+#two {margin-bottom: 100px;}
+.box {
+  background: inherit;
+  color: #FF5B06;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.box-01, .box-02 {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: intial;
+}
+.box .feed {
+  height: 100%;
+  overflow: hidden;
+  padding: 0 10px;
+  position: relative;
+  width: initial;
+}
+.box .feed h2 {
+  color: #FF5B06;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.box .feed p {
+  color: #555;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+
+/*-------------------------------*/
+/* CSS One
+/*-------------------------------*/
+
+.one article {background: #FFF;}
+
+/*-------------------------------*/
+/* CSS Two
+/*-------------------------------*/
+
+.two article {background: #FF5B06;}
+.two .feed h2, .two .feed p {color: #FFF;}
+
+
+/*-------------------------------*/
+/* CSS Three
+/*-------------------------------*/
+
+.three article:nth-child(1),
+.three article:nth-child(3) {background: #FF5B06;}
+.three article:nth-child(1) .feed h2, 
+.three article:nth-child(1) .feed p,
+.three article:nth-child(3) .feed h2, 
+.three article:nth-child(3) .feed p {color: #FFF;}
+
+/*-------------------------------*/
+/* CSS recursos
+/*-------------------------------*/
+
+.rotate {
+  -webkit-transform: rotate3d(0,1,0,180deg) !important;
+     -moz-transform: rotate3d(0,1,0,180deg) !important;
+      -ms-transform: rotate3d(0,1,0,180deg) !important;
+          transform: rotate3d(0,1,0,180deg) !important;
+}
+.rotate .box {
+  -webkit-transform: rotate3d(0,1,0,180deg) !important;
+     -moz-transform: rotate3d(0,1,0,180deg) !important;
+      -ms-transform: rotate3d(0,1,0,180deg) !important;
+          transform: rotate3d(0,1,0,180deg) !important;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+  }
+  50% {opacity: 1;}
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+  }
+  50% {opacity: 1;}
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+}
+.visivility {
+  display: block;
+  opacity: 1;
+}
+article .box {opacity: 1}
+article .box:before {
+  content: "";
+  margin-top: -10px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: -10px;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.one article .box:before {background: #FFF}
+.one article .box:last-child:before {
+  background: #FFF;
+  left: -10px;
+  right: auto;
+}
+.two article .box:before {background: #FF5B06}
+.two article .box:last-child:before {
+  background: #FF5B06;
+  left: -10px;
+  right: auto;
+}
+.three article .box:first-child:before {
+  background: #FF5B06;
+  left: auto;
+  right: -10px;
+
+}
+.three article:nth-child(2) .box:before,
+.three article:nth-child(4) .box:before{
+  background: #FFF;
+  left: -10px;
+  right: auto;
+}
+.four article .box:before {
+  background: #FFF;
+  left: auto;
+  right: -10px;
+}
+.five article .box:before {
+  background: #FFF;
+  left: -10px;
+  right: auto;
+}
+#one.one article .box:before {background: #FFF}
+#one.one article .box:last-child:before {
+  background: #FFF;
+  left: auto;
+  right: -10px;
+}
+#two.two article .box:before {background: #FF5B06}
+#two.two article .box:last-child:before {
+  background: #FF5B06;
+  left: auto;
+  right: -10px;
+}
+
+/*-------------------------------*/
+/* CSS @media screen responsive
+/*-------------------------------*/
+
+@media only screen and (min-width: 240px) {
+  header {height: 220px}
+  header img {width: 200px}
+  .box .feed p {font-size: 13px;}
+}
+@media only screen and (min-width: 320px) {
+  header {height: 260px}
+  header img {width: 220px}
+  .box .feed p {font-size: 13px;}
+}
+@media only screen and (min-width: 480px) {
+  header {height: 280px}
+  header img {width: 260px}
+  .box .feed p {font-size: 14px;}
+}
+@media only screen and (min-width: 528px) {
+  header {height: 300px}
+  header img {width: 280px}
+  .box {
+    display: inline-block;
+    margin: 0 -2px;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .box .feed p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  footer .box {height: 100%;}
+}
+@media only screen and (min-width: 640px) {
+  header {height: 300px}
+  header img {width: 300px}
+  .box {
+    display: inline-block;
+    margin: 0 -2px;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .box .feed p {font-size: 13px;}
+  footer .box {height: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  header {height: 400px}
+  header img {width: 320px}
+  header ul.social {top: 340px;}
+  .box {
+    display: inline-block;
+    margin: 0 -2px;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .box .feed p {font-size: 15px;line-height: 24px;}
+  footer .box {height: 100%;}
+}
+@media only screen and (min-width: 992px) {
+  header {height: 500px}
+  header img {width: 340px}
+  header ul.social {top: 400px;}
+  .box {
+    display: inline-block;
+    margin: 0 -2px;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .box .feed p {font-size: 15px;line-height: 24px;}
+  footer .box {height: 100%;}
+}
+@media only screen and (min-width: 1200px) {
+  header {height: 600px}
+  header img {width: 340px}
+  .box {
+    display: inline-block;
+    margin: 0 -2px;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .box .feed p {font-size: 15px;line-height: 24px;}
+  footer .box {height: 100%;}
+}
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  header {height: 400px}
+  .box {
+    display: inline-block;
+    margin: 0 -2px;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .box .feed p {font-size: 15px;line-height: 24px;}
+  footer .box {height: 100%;}
+}
+@media only screen and (max-width: 528px) {  
+  .box .feed {margin: 15px 0 25px;}
+  article .box:before {
+  content: "";
+  margin-top: 0;
+  margin-left: -10px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: auto;
+  bottom: -10px;
+  left: 50% !important;
+  right: auto;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.one article .box:before {background: #FFF}
+.one article .box:last-child:before {
+  background: #FFF;
+  top: -10px;
+  bottom: auto;
+}
+.two article .box:before {background: #FF5B06}
+.two article .box:last-child:before {
+  background: #FF5B06;
+  top: -10px;
+  bottom: auto;
+}
+.three article .box:first-child:before {
+  background: #FF5B06;
+  top: auto;
+  bottom: -10px;
+
+}
+.three article:nth-child(2) .box:before,
+.three article:nth-child(4) .box:before{
+  background: #FFF;
+  top: -10px;
+  bottom: auto;
+}
+.four article .box:before {
+  background: #FFF;
+  top: auto;
+  bottom: -10px;
+}
+.five article .box:before {
+  background: #FFF;
+  top: -10px;
+  bottom: auto;
+}
+#one.one article .box:before {background: #FFF}
+#one.one article .box:last-child:before {
+  background: #FFF;
+  top: -10px;
+  bottom: auto;
+}
+#two.two article .box:before {background: #FF5B06}
+#two.two article .box:last-child:before {
+  background: #FF5B06;
+  top: -10px;
+  bottom: auto;
+}
+}
+@media only screen and (max-width: 240px) {
+  header {display: none}
+  .box .feed p {font-size: 12px;}
+}
